@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css.css"> -->
+</head>
+
+<body>
+    <style>
+        html,
+        body {
+            height: 100%;
+            min-width: 300px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .container {
+            overflow: auto;
+            font-family: Montserrat, arial;
+        }
+
+        .grid {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .description-content {
+            margin-bottom: 20px;
+        }
+
+        .description-content.border-bottom {
+            border-bottom: 1px solid #D8D8D8;
+            padding-bottom: 10px;
+        }
+
+        .widget-one-image img {
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .mobile-hcol-1-1 img {
+            width: auto;
+        }
+
+        img.img-mobile {
+            display: none !important;
+        }
+
+        .description-details-content {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .description-title {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .description-details-item {
+            margin-bottom: 25px;
+            padding: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .hicon-schedule:before {
+            content: url("https://skin.feuvert.es/frontend/feuvert/default/images/svg/hicon-schedule.svg")
+        }
+
+        .hicon-shipping:before {
+            content: url("https://skin.feuvert.es/frontend/feuvert/default/images/svg/hicon-shipping.svg")
+        }
+
+        .hicon-settings:before {
+            content: url("https://skin.feuvert.es/frontend/feuvert/default/images/svg/hicon-settings.svg")
+        }
+
+        *::before,
+        *::after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        @media only screen and (min-width: 960px) {
+            .container {
+                width: 1140px;
+            }
+
+            .category-description {
+                padding: 0px 10px;
+            }
+
+            .description-details-icon {
+                padding: 0;
+                margin-bottom: 10px
+            }
+
+            .hcol-1-3,
+            .hcol-4-12 {
+                width: 31.54%;
+            }
+
+            h2 {
+                font-family: Montserratbold, arial, sans-serif;
+                font-size: 23px;
+                color: black;
+                text-transform: inherit;
+                text-align: left !important;
+                margin-top: 4% !important;
+                margin-bottom: 2% !important;
+            }
+
+            h3 {
+                font-family: Montserratbold, arial, sans-serif;
+                font-size: 21px;
+                color: black;
+                text-transform: inherit;
+                text-align: left !important;
+                margin-top: 2% !important;
+                margin-bottom: 2% !important;
+            }
+
+            p {
+                font-family: Montserrat, arial, sans-serif;
+                color: #444444;
+                font-size: 14px !important;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #329c32;
+            }
+
+            .description-details-content {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap
+            }
+
+            .description-details-item {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-flow: column;
+                flex-flow: column;
+                padding: 0 10px;
+            }
+
+            .description-details-icon {
+                min-width: 50px;
+                padding-right: 10px;
+                width: 50px;
+                display: inline-block;
+            }
+
+            .description-details-icon:before {
+                display: block
+            }
+
+            .questionfaq {
+                padding: 10px 30px;
+                font-family: arial;
+                background-color: #00a286;
+                margin: 10px 0 0 0;
+                border-radius: 0px !important;
+                color: white !important;
+                cursor: pointer;
+            }
+
+            .reponsefaq {
+                background-color: #f8f8f8 !important;
+                display: none;
+                font-size: 13px;
+                line-height: 17px;
+                padding: 12px;
+            }
+        }
+    </style>
+    <div class="container grid">
+        <div class="category-description mobile-hcol-1-1">
+            <p></p>
+            <div class="inspections-description-container">
+                <div class="description-content border-bottom">
+                    <p>
+                    <div class="widget-one-image mobile-hcol-1-1 big">
+                        <img class="img-responsive lazy lazy-placeholder"
+                            src="imagenes/Landing_Full_Width_3_Aire_Acondicionado_desk2.jpg" alt="" height="335"
+                            width="1000">
+                        <img class="img-mobile lazy lazy-placeholder"
+                            src="imagenes/Landing_Full_Width_3_Aire_Acondicionado_mob2.jpg" alt="" height="180"
+                            width="700">
+                    </div>
+                    &nbsp;
+                    <div class="widget-one-image mobile-hcol-1-1 big">
+                        <img class="img-responsive lazy lazy-placeholder"
+                            src="imagenes/Landing_Full_Width_3_Aire_Acondicionado_desk_b.jpg" alt="" height="335"
+                            width="1000">
+                        <img class="img-mobile lazy lazy-placeholder"
+                            src="imagenes/Landing_Full_Width_3_Aire_Acondicionado_mob.jpg" alt="" height="180"
+                            width="700">
+                    </div>
+                    </p>
+                    <div><span style="font-size: 1.5em;">Descripci&oacute;n</span></div>
+                    <div class="description-text">
+                        <p>Si has llegado hasta aqu&iacute; es porque tienes que llevar a cabo la carga del aire
+                            acondicionado de tu coche. En Feu Vert, adem&aacute;s de ofrecerte el servicio de recarga
+                            del aire acondicionado de tu veh&iacute;culo con el gas R134A, puedes optar por el pack de
+                            &ldquo;Carga de aire con tratamiento de ozono y purificaci&oacute;n del
+                            habit&aacute;culo&rdquo;&nbsp;-que incluye un tratamiento de limpieza de ozono antiolores y
+                            antibacterias- o el pack completo de &ldquo;Carga de aire con tratamiento de ozono,
+                            purificaci&oacute;n y cambio de filtro del habit&aacute;culo&rdquo; para que el sistema de
+                            climatizaci&oacute;n de tu coche quede totalmente preparado. Tan solo tienes que elegir la
+                            opci&oacute;n que mejor se adapte a tus necesidades, a&ntilde;adirla al carrito y finalizar
+                            tu reserva.</p>
+                        <p><strong>&iquest;Qu&eacute; incluye el servicio de carga de aire acondicionado de Feu
+                                Vert?</strong></p>
+                        <p>Si te decantas por nuestro servicio b&aacute;sico de carga del aire acondicionado se incluye:
+                        </p>
+                        <ul>
+                            <li>Carga del aire acondicionado Gas R134A, si necesitas la recarga de <a
+                                    href="https://www.feuvert.es/consejos-practicos/caracteristicas-del-nuevo-gas-r1234yf-para-el-sistema-aire-acondicionado-coche">gas
+                                    R1234YF</a>, est&aacute; disponible en algunos de nuestros autocentros-</li>
+                            <li>Revisi&oacute;n del funcionamiento del sistema de climatizaci&oacute;n</li>
+                            <li>Vaciado del gas del circuito del aire acondicionado</li>
+                            <li>Reciclado del gas</li>
+                        </ul>
+                        <p>En Feu Vert puedes realizar la carga de aire acondicionado del coche con el gas R134A
+                            refrigerante homologado por los fabricantes de veh&iacute;culos. En esta r&aacute;pida
+                            operaci&oacute;n llevada a cabo en nuestros <a href="/talleres-feuvert">talleres
+                                mec&aacute;nicos</a>, <strong>vaciamos de gas el circuito del aire acondicionado,
+                                reciclando el viejo gas, y lo llenamos con el gas nuevo.</strong> Por eso, <strong>es
+                                una carga de gas del aire acondicionado, y no una recarga del aire
+                                acondicionado.</strong> Adem&aacute;s, comprobamos el funcionamiento del sistema de aire
+                            acondicionado para asegurarnos del correcto estado de la <a
+                                href="/consejos-practicos/climatizacion-vehiculos">climatizaci&oacute;n del coche</a>.
+                            Revisamos las presiones del circuito, la temperatura en el interior del habit&aacute;culo,
+                            la puesta en marcha del compresor, la correa de aire acondicionado y el estado del filtro de
+                            habit&aacute;culo.</p>
+                    </div>
+                </div>
+                <div class="description-details-content">
+                    <h2 class="description-title">&iquest;Por qu&eacute; cargar el aire acondicionado del coche en Feu
+                        Vert?</h2>
+                    <div class="description-details-item mobile-hcol-1-1 hcol-1-3"><span
+                            class="description-details-icon hicon-schedule"></span> <span
+                            class="description-details-text">Pide tu cita en taller</span></div>
+                    <div class="description-details-item mobile-hcol-1-1 hcol-1-3"><span
+                            class="description-details-icon hicon-settings"></span> <span
+                            class="description-details-text">Montaje realizado por profesionales</span></div>
+                    <div class="description-details-item mobile-hcol-1-1 hcol-1-3"><span
+                            class="description-details-icon hicon-shipping"></span> <span
+                            class="description-details-text">+86 talleres en Espa&ntilde;a</span></div>
+                    <br />
+                    <p>En Feu Vert realizamos la recarga del aire acondicionado con la mejor relaci&oacute;n calidad /
+                        precio. Se realiza por profesionales y en poco tiempo.</p>
+                    <p>No lo dudes y realiza la recarga del aire acondicionado en Feu Vert con total garant&iacute;a,
+                        tanto de la mano de obra como de los <a href="/recambios">recambios</a> utilizados.</p>
+                </div>
+                <div class="description-content border-bottom">
+                    <h2 class="description-title">&iquest;Por qu&eacute; es necesario recargar el aire acondicionado del
+                        coche?</h2>
+                    <div class="description-text">
+                        <p>Es necesario cargar el aire acondicionado del coche por varias razones. Teniendo en cuenta
+                            que la temperatura ideal dentro del veh&iacute;culo es entre los 20 y 24 grados
+                            cent&iacute;grados, antes de nada, es imprescindible explicar el por qu&eacute; es tan
+                            importante el aire acondicionado en nuestro coche o furgoneta. Es cierto, que es importante
+                            realizar la recarga del aire acondicionado del coche para poder conducir c&oacute;modamente
+                            en verano, para que se refresque el interior del veh&iacute;culo cuando se registran altas
+                            temperaturas. Sin embargo, dicha carga de gas del aire acondicionado tambi&eacute;n es
+                            importante realizarla en invierno, cuando se empa&ntilde;a el cristal para obtener una
+                            visibilidad &oacute;ptima en carretera.</p>
+                        <p>En caso de que se forme vaho en el cristal, puede ser porque el sistema de <a
+                                href="/consejos-practicos/aire-acondicionado-del-coche-no-enfria">aire acondicionado del
+                                coche no enfr&iacute;a</a> lo suficiente. Este es un signo inequ&iacute;voco de que
+                            tienes que hacer la recarga del aire acondicionado. El cristal se empa&ntilde;a con el
+                            contraste de temperatura que hay entre el interior y el exterior del veh&iacute;culo. Por
+                            eso en invierno, para desempa&ntilde;ar el cristal, se pone el aire fr&iacute;o.</p>
+                        <p>Sea la &eacute;poca del a&ntilde;o que sea, para que la climatizaci&oacute;n del
+                            veh&iacute;culo funcione correctamente, el sistema del aire acondicionado tiene que tener
+                            una carga m&iacute;nima de gas, y que el resto de piezas que componen el sistema se
+                            encuentre en buenas condiciones. Es por esa raz&oacute;n por la que no debes dejar el
+                            mantenimiento del sistema de climatizaci&oacute;n y carga de aire acondicionado del coche
+                            para el &uacute;ltimo momento.</p>
+                        <p>El circuito de climatizaci&oacute;n del coche lleva un gas comprimido refrigerante, ese gas
+                            pasa de estado gaseoso a l&iacute;quido para que salga aire fr&iacute;o por los conductos
+                            del aire acondicionado del coche. Es importante poner el sistema en funcionamiento de forma
+                            progresiva para que el gas comience a salir.</p>
+                        <p>Adem&aacute;s, los sistemas de refrigeraci&oacute;n de los veh&iacute;culos no son 100%
+                            estancos, son ligeramente permeables por los materiales con los que est&aacute;n realizados,
+                            y por este mismo motivo tambi&eacute;n el gas refrigerante absorbe humedad del exterior, por
+                            eso el sistema de climatizaci&oacute;n lleva un filtro deshidratador. Por eso es importante
+                            realizar el mantenimiento del sistema de climatizaci&oacute;n y la recarga de gas del aire
+                            acondicionado de forma peri&oacute;dica.</p>
+                    </div>
+                </div>
+                <div class="description-content border-bottom">
+                    <h2 class="description-title">&iquest;Cu&aacute;ndo realizar la carga del aire acondicionado?</h2>
+                    <div class="description-text">
+                        <p>La carga de aire acondicionado del coche hay que realizarla cuando se detecten determinados
+                            s&iacute;ntomas. El sistema del aire acondicionado de un coche pierde gas por diferentes
+                            motivos, aunque el sistema se encuentre en buen estado, esa p&eacute;rdida tambi&eacute;n
+                            puede darse. El sistema de aire acondicionado del coche estando en buenas condiciones, hace
+                            que el gas se transforme en l&iacute;quido para enfriar el aire que sale por los conductos y
+                            rejillas del sistema de ventilaci&oacute;n.</p>
+                        <p>Sin embargo, dependiendo del uso que se le d&eacute;, del estado del sistema de
+                            climatizaci&oacute;n, y la climatolog&iacute;a habitual a la que est&eacute; expuesta el
+                            coche, provocar&aacute;n que &eacute;ste pierda m&aacute;s o menos gas. Es por estas
+                            diferentes razones por las que antes o despu&eacute;s tendr&aacute;s que cambiar el aire
+                            acondicionado del coche.</p>
+                        <p>Para saber cu&aacute;ndo realizar la carga de aire acondicionado f&iacute;jate en:</p>
+                        <ul>
+                            <li>Si el aire acondicionado enfr&iacute;a poco</li>
+                            <li>O si no se desempa&ntilde;a el cristal cuando activas el aire fr&iacute;o</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description-content border-bottom">
+                    <h2 class="description-title">Tipos de gas refrigerante para cargar aire acondicionado</h2>
+                    <div class="description-text">
+                        <p>A la hora de realizar la recarga de aire acondicionado, en funci&oacute;n del veh&iacute;culo
+                            que poseas y de la antig&uuml;edad del mismo, es posible que en tu taller te pregunten si
+                            cuenta con el gas refrigerante R134A o el <a
+                                href="https://www.feuvert.es/consejos-practicos/caracteristicas-del-nuevo-gas-r1234yf-para-el-sistema-aire-acondicionado-coche">gas
+                                R1234yf</a>.</p>
+                        <p>*El 1 de enero del 2018 cambi&oacute; la legislaci&oacute;n, y desde entonces es obligatorio
+                            que todos los fabricantes de veh&iacute;culos empleen el refrigerante o nuevo gas R1234YF.
+                            Por eso, si te preguntas <a
+                                href="/consejos-practicos/que-gas-refrigerante-lleva-mi-coche-para-el-sistema-de-aire-acondicionado-r1234yf">qu&eacute;
+                                gas refrigerante lleva mi coche</a>, ah&iacute; tienes la respuesta. Sin embargo, hay
+                            marcas de veh&iacute;culos que antes esta modificaci&oacute;n de la ley, se anticiparon y
+                            empezaron a modificar el motor de sus veh&iacute;culos para poder utilizar directamente este
+                            gas que es mucho menos contaminante.</p>
+                        <p>En Feu Vert, <strong>con el servicio de carga de aire acondicionado del coche se incluye el
+                                gas R134A</strong>, no obstante, si tu veh&iacute;culo ya incluye el nuevo gas R1234YF,
+                            no dudes en consultarnos porque varios de nuestros talleres mec&aacute;nicos disponen de la
+                            maquinaria y tecnolog&iacute;a necesaria para realizar la carga de dicho gas.</p>
+                    </div>
+                </div>
+                <div class="description-content border-bottom">
+                    <h2 class="description-title">Otros servicios de Carga de Aire Acondicionado en Feu Vert</h2>
+                    <div class="description-text">
+                        <p>Como ya hemos mencionado previamente, si adem&aacute;s de realizar la recarga del aire
+                            acondicionado de tu veh&iacute;culo est&aacute;s buscando una limpieza extra de los
+                            conductos o el <a href="/cambio-filtro-de-habitaculo">cambio del filtro polen</a> o del
+                            habit&aacute;culo de tu veh&iacute;culo, en Feu Vert te ofrecemos dos packs muy
+                            interesantes:</p>
+                        <ul>
+                            <li><strong>Carga de aire con tratamiento de ozono y purificaci&oacute;n del
+                                    habit&aacute;culo:</strong> si adem&aacute;s de la carga del gas del aire
+                                acondicionado est&aacute;s buscando <a
+                                    href="https://www.feuvert.es/consejos-practicos/limpieza-aire-acondicionado-coche">limpieza
+                                    del aire acondicionado del coche</a>, este es el servicio que estabas buscando. Y es
+                                que es un <a href="https://www.feuvert.es/recambios/ozono">tratamiento de ozono para el
+                                    coche</a> -antibacterias y antiolores- recomendado para limpiar los conductos del
+                                aire acondicionado del coche, dejarlo libre de bacterias y eliminar el mal olor que en
+                                ocasiones se genera al encender el aire acondicionado del coche.</li>
+                            <li><strong>Carga de aire con tratamiento de ozono, purificaci&oacute;n y cambio de filtro
+                                    del habit&aacute;culo:</strong> para que el sistema de climatizaci&oacute;n de tu
+                                coche quede totalmente preparado, este servicio incluye el vaciado y reciclado del
+                                antiguo gas, la carga del gas R134A, el <a href="/cambio-filtro-de-habitaculo">cambio de
+                                    filtro del habit&aacute;culo</a> y la desinfecci&oacute;n del sistema del aire
+                                acondicionado y el interior del coche con el tratamiento con ozono.</li>
+                        </ul>
+                        <p>Adem&aacute;s, recuerda que en Feu Vert disponemos de un amplio abanico de servicios y
+                            recambios para garantizar el &oacute;ptimo mantenimiento de tu veh&iacute;culo.
+                            Independientemente de que llega la fecha de la <a
+                                href="/recambios/revisiones">revisi&oacute;n del coche</a>, tambi&eacute;n puedes
+                            reservar el <a href="/cambio-del-filtro-del-aire">cambio del filtro del aire</a>, el <a
+                                href="/control-del-circuito-aire-acondicionado-de-coche-999104">control del circuito del
+                                aire acondicionado</a> u otros servicios de taller a trav&eacute;s de nuestra
+                            p&aacute;gina web.</p>
+                    </div>
+                </div>
+                <div class="questions-dropdown-container container grid">
+                    <div class="description-content">
+                        <h2 class="description-title">Preguntas frecuentes sobre carga aire acondicionado coche</h2>
+                    </div>
+                    <div id="faq">
+                        <div class="questionfaq faqclose">
+                            <strong>&iquest;Por qu&eacute; no funciona el aire acondicionado
+                                coche?</strong>
+                        </div>
+                        <div class="responsefaq">
+                            <div>
+                                El aire acondicionado del coche puede que no funcione por cuatro motivos principales:
+                                gas
+                                refrigerante, el filtro, el compresor del aire acondicionado o los ventiladores. No
+                                obstante, lo m&aacute;s habitual es que el aire acondicionado del coche no funcione o
+                                bien porque el filtro del habit&aacute;culo est&aacute; obstruido -la suciedad acumulada
+                                no deja pasar el aire correctamente y la mejor soluci&oacute;n para este problema es
+                                cambiar el filtro de habit&aacute;culo o cargar el aire acondicionado del coche- o
+                                porque falta gas refrigerante- en esos casos lo que necesitas es realizar una carga del
+                                aire acondicionado del coche-.
+                            </div>
+                        </div>
+
+                        <div class="questionfaq faqclose">
+                            <strong>&iquest;Por qu&eacute; huele mal el aire acondicionado
+                                coche?</strong>
+                        </div>
+                        <div class="responsefaq">
+                            <div>
+                                El mal olor del aire acondicionado del coche se produce en la mayor&iacute;a de las
+                                ocasiones como consecuencia de unos conductos de ventilaci&oacute;n sucios. Puede ser
+                                que el filtro de part&iacute;culas est&eacute; sucio o que haya aparecido moho al
+                                quedarse la humedad atrapada dentro del evaporador o el condensador. Muchas veces no
+                                basta con cambiar el filtro del habit&aacute;culo o del polen, sino que es recomendable
+                                aplicar tratamiento de limpieza del aire acondicionado del coche. Por ejemplo, desde Feu
+                                Vert, te ofrecemos un tratamiento de desinfecci&oacute;n con ozono que elimina bacterias
+                                y microorganismos nocivos para mantener los conductos de ventilaci&oacute;n y del aire
+                                acondicionado del coche como el primer d&iacute;a.
+                            </div>
+                        </div>
+                        <div class="questionfaq faqclose">
+                            <strong>&iquest;C&oacute;mo s&eacute; si tengo que cargar el aire
+                                acondicionado del coche?</strong>
+                        </div>
+                        <div class="responsefaq">
+                            <div>
+                                Para saber si tienes que cargar el aire acondicionado del coche hay dos signos
+                                inequ&iacute;vocos que te pondr&aacute;n sobre la pista. Uno de los s&iacute;ntomas
+                                principales que nos indican que hay que recargar el aire acondicionado del coche es
+                                cuando enfr&iacute;a poco. Otro de los s&iacute;ntomas m&aacute;s habituales, que
+                                normalmente se detecta en invierno, es cuando al activar el aire fr&iacute;o, el vaho de
+                                los cristales no se desempa&ntilde;a de forma r&aacute;pida.
+                            </div>
+                        </div>
+                        <div class="questionfaq faqclose">
+                            <strong>&iquest;D&oacute;nde cargar aire acondicionado del
+                                coche?</strong>
+                        </div>
+                        <div class="responsefaq">
+                            <div>
+                                La carga de aire acondicionado del coche se recomienda llevarla a cabo en un taller
+                                mec&aacute;nico de confianza y con experiencia. As&iacute; pues, para garantizar un
+                                correcto mantenimiento y funcionamiento del sistema de climatizaci&oacute;n de tu
+                                veh&iacute;culo te aconsejamos que acudas a un taller de mec&aacute;nica r&aacute;pida
+                                para que te atiendan profesionales.
+                            </div>
+                        </div>
+                        <div class="questionfaq faqclose">
+                            <strong>&iquest;Cu&aacute;nto se tarda en recargar el aire
+                                acondicionado coche?</strong>
+                        </div>
+                        <div class="responsefaq">
+                            <div>
+                                El aire acondicionado del coche tarda en recargarse apenas unas 2 horas. Se trata de una
+                                operaci&oacute;n de taller r&aacute;pida por lo que, si pides cita en tu taller Feu
+                                Vert, llevar&aacute;n a cabo el servicio en el momento, sin necesidad de que tengas que
+                                dejar el coche y volver a recogerlo otro d&iacute;a.
+                            </div>
+                        </div>
+                        <div class="questionfaq faqclose">
+                            <strong>&iquest;C&oacute;mo se hace la recarga del aire
+                                acondicionado del coche?</strong>
+                        </div>
+                        <div class="responsefaq">
+                            <div>
+                                La recarga del aire acondicionado del coche consiste en rellenar el sistema de aire
+                                acondicionado con el gas refrigerante oportuno hasta que quede lleno. Sin embargo, lo
+                                m&aacute;s aconsejable, en lugar de una recarga, es realizar una carga del aire
+                                acondicionado. Es decir, vaciar de gas el circuito del aire acondicionado, reciclando el
+                                viejo gas, y llenarlo con el gas nuevo. Este es el procedimiento que seguimos en Feu
+                                Vert para garantizar un correcto mantenimiento del sistema de climatizaci&oacute;n del
+                                veh&iacute;culo.
+                            </div>
+                        </div>
+                        <div class="questionfaq faqclose">
+                            <strong>&iquest;Cu&aacute;l es el mejor gas refrigerante para el
+                                coche?</strong>
+                        </div>
+                        <div class="responsefaq">
+                            <div>
+                                Es el fabricante el que determina qu&eacute; gas debe llevar cada veh&iacute;culo, y no
+                                es sustituible. Actualmente existen dos tipos de gases homologados en el mercado: R134A
+                                y R1234YF. El nuevo gas R1234YF se encuentra principalmente en coches fabricados a
+                                partir de 2018. Puedes consultar el gas que utiliza tu veh&iacute;culo en la ficha del
+                                fabricante.
+                            </div>
+                        </div>
+                        <script type="application/ld+json">
+                            {"@context": "http://schema.org", 
+                            "@type": "FAQPage", 
+                            "mainEntity": [{
+                                "@type": "Question", "name": "&iquest;Por qu&eacute; no funciona el aire acondicionado coche?" 
+                            }]}
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
